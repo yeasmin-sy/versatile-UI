@@ -1,0 +1,202 @@
+/* primary design */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+.inter-font-family {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ms-madi-regular {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+.primary-btn{
+    padding: 16px 46px;
+    border-radius: 42px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: rgba(230, 83, 60, 1);
+}
+.text-2{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* design nav bar */
+.banner{
+ max-width:1100px;
+ margin: 50px auto;
+ 
+}
+.banner-body{
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    padding: 5px 10px;
+    border: 1px solid rgb(128, 128, 128,0.3);
+    border-radius: 40px;
+}
+.dropdown{
+    display: none;
+}
+.menu>div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+ul>li{
+    list-style: none;
+}
+ul>li>a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.125rem;
+}
+#domain{
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: rgba(230, 83, 60, 1);
+}
+#home{
+    background-color: rgba(230, 83, 60, 1);
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+
+/* design banner-body */
+.banner-body{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+.banner-content{
+   
+    
+}
+.banner-title{
+    font-size: 4.75rem;
+    font-weight: 900;
+     margin-bottom: 0px;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner-img{
+   margin-top: 10px;
+}
+#download{
+   background-color: transparent;
+  border: 1px solid white;
+}
+.box-1,.box-2{
+        max-width: 190px;
+        border:1px solid rgb(128, 128, 128,0.2) ;
+       background-color: rgb(255, 255, 255,0.1);
+     padding: 10px 20px;
+       border-radius: 12px;
+      
+}
+.banner-img p{
+    margin-top: 5px;
+ 
+}
+.box-1>h3{
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+.box-2>.content>h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.box-1{
+   position: relative;
+   left: 220px;
+   top: -480px;
+}
+.box-2{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: -230px;
+    margin-left: -100px;
+ 
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgba(230, 83, 60, 1);
+}
+
+@media screen and (max-width:576px) {
+   
+    nav ul li{
+        display: none;
+    }
+    nav ul{
+        border: none;
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        
+    }
+    .dropdown-content>a{
+        text-decoration: none;
+        color: white;
+    }
+   .dropdown:hover .dropdown-content{
+       display: grid;
+       position: relative;
+       left: 10px;  
+   }
+   .banner-body{
+     flex-direction: column;
+   }
+   .banner-img>img{
+      width: 100%;
+   }
+   .box-1{
+    
+     top: -550px; 
+     left: 200px;
+     width: 30%;
+   }
+   .box-1>h3{
+    font-size: 1.8rem;
+   }
+   .box-2{
+    margin-top: -460px;
+    margin-left: 70px;
+   }
+}
