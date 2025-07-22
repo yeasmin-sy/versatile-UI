@@ -20,6 +20,7 @@
 body{
     background-color: black;
     color: white;
+
 }
 .primary-btn{
     padding: 16px 46px;
@@ -32,16 +33,24 @@ body{
 .text-2{
     color: rgba(255, 255, 255, 0.65);
 }
+.banner,.habit{
+ max-width:1200px;
+ margin: 50px auto;
+
+}
+.title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+}
 
 /* design nav bar */
-.banner{
- max-width:1100px;
- margin: 50px auto;
- 
-}
-.banner-body{
-    
-}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -84,35 +93,40 @@ ul>li>a{
 
 /* design banner-body */
 .banner-body{
-
+     
     display: flex;
     justify-content: space-between;
-    gap: 160px;
+    gap: 100px;
 }
 .banner-content{
-   
-    
+    max-width: 550px;
 }
+
 .banner-title{
     font-size: 4.75rem;
     font-weight: 900;
-     margin-bottom: 0px;
+     margin-bottom: 20px;
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
 }
 .banner-img{
-   margin-top: 10px;
+    position: relative;
+   right: 50px;
+  
+    
 }
+
 #download{
    background-color: transparent;
   border: 1px solid white;
 }
 .box-1,.box-2{
-        max-width: 190px;
+       width: 160px;
         border:1px solid rgb(128, 128, 128,0.2) ;
        background-color: rgb(255, 255, 255,0.1);
-     padding: 10px 20px;
+       padding: 10px 10px;
        border-radius: 12px;
       
 }
@@ -135,16 +149,19 @@ ul>li>a{
     margin-bottom: 0px;
 }
 .box-1{
-   position: relative;
+
+   position: absolute;
    left: 220px;
-   top: -480px;
+   bottom: 400px;
+   /* box-sizing: border-box; */
 }
 .box-2{
     display: flex;
     gap: 15px;
     align-items: center;
-    margin-top: -230px;
-    margin-left: -100px;
+   position: absolute;
+   bottom: 100px;
+   left: -50px;
  
 }
 .circle{
@@ -154,8 +171,33 @@ ul>li>a{
     background-color:  rgba(230, 83, 60, 1);
 }
 
+/* design habit section */
+.habit{
+    text-align: center;
+}
+.habit-content{
+    max-width: 670px;
+    margin: 50px auto;
+}
+.habit-names{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+
+}
+
+
+.habit-names img{
+  border-radius: 50%;
+}
+.habit-names h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 @media screen and (max-width:576px) {
-   
+   /* responsive nav bar */
     nav ul li{
         display: none;
     }
@@ -180,23 +222,29 @@ ul>li>a{
        position: relative;
        left: 10px;  
    }
+   /* responsive banner part */
    .banner-body{
      flex-direction: column;
+     gap: 20px;
+   }
+   .banner-img{
+    right: 0px;
    }
    .banner-img>img{
-      width: 100%;
+    width: 100%;
    }
-   .box-1{
-    
-     top: -550px; 
-     left: 200px;
-     width: 30%;
-   }
-   .box-1>h3{
-    font-size: 1.8rem;
+   .primary-btn{
+    font-size: 1rem;
+    padding: 16px 30px;
    }
    .box-2{
-    margin-top: -460px;
-    margin-left: 70px;
+    left: 0px;
+   }
+   .box-1{
+    left: 200px;
+   }
+   /* responsive habit section */
+   .habit-names{
+    grid-template-columns: repeat(1,1fr);
    }
 }
