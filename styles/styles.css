@@ -547,9 +547,13 @@ footer{
     gap: 5px;
     margin-left: 5px;
    }
+
    .calculator{
-    width: 95%;
+    width: 100%;
    }
+    .form-input-1{
+        grid-template-columns: repeat(1,1fr);
+    }
    .chart{
     width: 100%;
    }
