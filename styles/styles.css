@@ -241,7 +241,9 @@ ul>li>a{
 
 /* design training section */
 
-
+.training{
+    padding-left: 5px;
+}
 .exercise-images{
     margin-top: 50px;
     display: flex;
@@ -430,6 +432,7 @@ input,select{
 /* style footer */
 footer{
     background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 5px;
 }
 .footer-section{
     padding: 65px 0px 35px 0px;
